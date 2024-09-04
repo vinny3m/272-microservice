@@ -21,7 +21,7 @@ I used the commands as follows:
 ``` curl http://localhost:3000/hello ```
 Or 
 In browser the result is as follows:
-image
+![hello-1](images/hello-1.png)
 
 ### Push to Docker Hub: 
 ``` docker login ``` 
@@ -37,8 +37,8 @@ Then check the kubernetes service is running or not:
 ``` minikube service hello-service ```
 
 The output is:
-image
-image
+![hello-2](images/hello-2.png)
+![hello-3](images/hello-3.png)
 
 ## World-service
 Also Created a world-service which returns a simple World message.
@@ -59,7 +59,7 @@ I used the commands like
 Also checked if the service was running locally or not.
 Below is the image for the test of the service locally.
 
-image
+![world-1](images/world-1.png)
 
 ### Push to Docker Hub: 
 ``` docker push vineelam23/world-service:latest ```
@@ -75,8 +75,8 @@ Then check if the kubernetes service is running or not using the below command.
 ``` minikube service world-service ```
 
 Output is:
-image
-image
+![world-2](images/world-2.png)
+![world-3](images/world-3.png)
 
 Both the services are running successfully in kubernetes setup.
 
@@ -97,23 +97,9 @@ Here are the commands used and the test result for the combined script.
 ### Used to test the service:
 ``` minikube service combined-service ```
 
-image 
-image 
+![cs-1](images/cs-1.png)
+![cs-2](images/cs-2.png)
 
 
 ## the directory structure is:
-272-microservice
--hello-service
---Dockerfile
---index.js
--kubernates
---combined-service
----app.js
----Dockerfile
---hello-service.yaml
---world-service.yaml
--world-service
---Dockerfile
---index.js
-
-
+272-microservice/ ├── hello-service/ │ ├── Dockerfile │ └── index.js ├── kubernates/ │ ├── combined-service/ │ │ ├── app.js │ │ └── Dockerfile │ ├── hello-service.yaml │ └── world-service.yaml └── world-service/ ├── Dockerfile └── index.js
