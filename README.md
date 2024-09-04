@@ -1,15 +1,15 @@
-**Initially I installed vs code.
-**Then installed git and cloned my repository. 
-**I choose nodeJs and ExpressJs to create the microservices.
+**Initially I installed vs code.**
+**Then installed git and cloned my repository.**
+**I choose nodeJs and ExpressJs to create the microservices.**
 **So i used commands like ` npm init -y ` to initialize the project and did installations using ` npm install express `
-` npm install axios `
-**Then installed docker and chose minikube for kubernates and installed it.
-**I installed minikube using 
+` npm install axios ` **
+**Then installed docker and chose minikube for kubernates and installed it.**
+**I installed minikube using**
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ```
 & 
 ```brew install minikube```
 
-**Cloned my git repo to vs code and used nodeJs and ExpressJs for creating two microservices 
+**Cloned my git repo to vs code and used nodeJs and ExpressJs for creating two microservices**
 
 ## Hello-service
 Created hello-service which returns a simple Hello message.
