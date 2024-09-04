@@ -1,4 +1,4 @@
-##Setup Installations:
+## Setup Installations:
 
 Initially I installed vs code.</br>
 Then installed git and cloned my repository.</br>
