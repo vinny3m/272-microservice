@@ -7,5 +7,5 @@ app.get('/world', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`World Service listening at http://localhost:${port}`);
+  console.log(`World Service is listening at http://localhost:${port}`);
 });
