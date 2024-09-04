@@ -1,8 +1,7 @@
 Initially I installed vs code 
 Then installed docker and chose minikube for kubernates and installed it.
 I installed minikube using 
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ```
+```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ```
 & 
 ```brew install minikube```
 
