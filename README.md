@@ -7,23 +7,23 @@ I installed minikube using
 
 Cloned my git repo to vs code and used nodeJs and ExpressJs for creating two microservices 
 
-##Hello-service
+## Hello-service
 Created hello-service which returns a simple Hello message.
 Here the endpoint is /hello and returns “Hello” string
 Created a dockerfile for this microservice and built the docker image.
 I used the commands as follows:
-###Build the Docker image:
+### Build the Docker image:
 ``` docker build -t vineelam23/hello-service:latest . ```
-###Run the Docker container locally:
+### Run the Docker container locally:
 ``` docker run -p 3000:3000 vineelam23/hello-service:latest ```
 
-###Test the service locally: To access the service in your browser or via curl:
+### Test the service locally: To access the service in your browser or via curl:
 ``` curl http://localhost:3000/hello ```
 Or 
 In browser the result is as follows:
 image
 
-###Push to Docker Hub: 
+### Push to Docker Hub: 
 ``` docker login ``` 
 ``` docker push vineelam23/hello-service:latest ```
 
@@ -31,8 +31,8 @@ Then deployment in kubernetes is done for this service
 The code is in the file hello-service.yaml
 
 Used commands like:
-``` minikube start
-kubectl apply -f hello-service.yaml ```
+``` minikube start ```
+``` kubectl apply -f hello-service.yaml ```
 Then check the kubernetes service is running or not:
 ``` minikube service hello-service ```
 
@@ -40,7 +40,7 @@ The output is:
 image
 image
 
-##World-service
+## World-service
 Also Created a world-service which returns a simple World message.
 The endpoint here is /world and uses port as 3001 and returns “World” as a string in the browser.
 Created dockerfile and also built the docker image and pushed to docker hub. 
@@ -48,12 +48,12 @@ Here is the link for created docker images in docker hub.
 
 
 I used the commands like 
-##Build the Docker image:
+### Build the Docker image:
 ``` docker build -t vineelam23/world-service:latest . ```
-Run the Docker container locally:
+### Run the Docker container locally:
 ``` docker run -p 3001:3000 vineelam23/world-service:latest ```
 
-Test the service locally: To access the service in your browser or via curl:
+### Test the service locally: To access the service in your browser or via curl:
 ``` curl http://localhost:3001/world ```
 
 Also checked if the service was running locally or not.
@@ -87,21 +87,21 @@ Here are the commands used and the test result for the combined script.
 ``` docker build -t vineelam23/combined-service:latest . ```
 ``` docker push vineelam23/combined-service:latest ```
 
-Used commands like:
-``` kubectl get pods
-kubectl get service
-Kubectl get deployment ```
+### Used commands like:
+``` kubectl get pods```
+```kubectl get service```
+``` kubectl get deployment ```
 
-###Used to apply configuration:
+### Used to apply configuration:
 ``` kubectl apply -f combined-service.yaml ```
-###Used to test the service:
+### Used to test the service:
 ``` minikube service combined-service ```
 
 image 
 image 
 
 
-the directory structure is:
+## the directory structure is:
 272-microservice
 -hello-service
 --Dockerfile
