@@ -63,17 +63,17 @@ I used the commands like
 ### Test the service locally: To access the service in the browser or via curl:
 ``` curl http://localhost:3001/world ```
 
-Also checked if the service was running locally or not.
-Below is the image for the test of the service locally.
+Also checked if the service was running locally or not.</br>
+Below is the image for the test of the service locally. </br>
 
 ![world-1](images/world-1.png)
 
-### Push to Docker Hub: 
+### Pushed to Docker Hub: 
 ``` docker push vineelam23/world-service:latest ```
 
-Then deployment in kubernetes is done for this world service.
-Used minikube for kubernetes cluster setup and deployment.
-The code is in the file world-service.yaml
+Then deployment in kubernetes is done for this world service. </br>
+Used minikube for kubernetes cluster setup and deployment. </br>
+The code is in the file world-service.yaml </br>
 
 Used commands like:
 ``` minikube start ```
@@ -85,10 +85,10 @@ Output is:
 ![world-2](images/world-2.png)
 ![world-3](images/world-3.png)
 
-Both the services are running successfully in kubernetes setup.
+Both the services are running successfully in kubernetes setup. </br>
 
-And then created a simple service which calls both the endpoints and prints “Hello World” if both the services respond correctly.
-I created a service named combined-service and containerized with docker and then deployed this service using kubernetes similarly.
+And then created a simple service which calls both the endpoints and prints “Hello World” if both the services respond correctly. </br>
+I created a service named combined-service and containerized with docker and then deployed this service using kubernetes similarly. </br>
 
 Here are the commands used and the test result for the combined script. 
 ``` docker build -t vineelam23/combined-service:latest . ```
