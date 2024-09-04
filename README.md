@@ -108,4 +108,4 @@ Here are the commands used and the test result for the combined script.
 The docker hub links for the created docker images are:
 ``` https://hub.docker.com/repository/docker/vineelam23/hello-service ```
 ``` https://hub.docker.com/repository/docker/vineelam23/world-service  ```
-``` https://hub.docker.com/repository/docker/vineelam23/hello-service ```
+``` https://hub.docker.com/repository/docker/vineelam23/combined-service ```
