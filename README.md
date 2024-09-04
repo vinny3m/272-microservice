@@ -1,4 +1,8 @@
-Initially I installed vs code 
+Initially I installed vs code.
+Then installed git and cloned my repository. 
+I choose nodeJs and ExpressJs to create the microservices.
+So i used commands like ` npm init -y ` to initialize the project and did installations using ` npm install express `
+` npm install axios `
 Then installed docker and chose minikube for kubernates and installed it.
 I installed minikube using 
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" ```
@@ -101,5 +105,7 @@ Here are the commands used and the test result for the combined script.
 ![cs-2](images/cs-2.png)
 
 
-## the directory structure is:
-272-microservice/ ├── hello-service/ │ ├── Dockerfile │ └── index.js ├── kubernates/ │ ├── combined-service/ │ │ ├── app.js │ │ └── Dockerfile │ ├── hello-service.yaml │ └── world-service.yaml └── world-service/ ├── Dockerfile └── index.js
+The docker hub links for the created docker images are:
+``` https://hub.docker.com/repository/docker/vineelam23/hello-service ```
+``` https://hub.docker.com/repository/docker/vineelam23/world-service  ```
+``` https://hub.docker.com/repository/docker/vineelam23/hello-service ```
