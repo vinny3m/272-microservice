@@ -23,7 +23,7 @@ I used the commands as follows:
 ### Run the Docker container locally:
 ``` docker run -p 3000:3000 vineelam23/hello-service:latest ```
 
-### Test the service locally: To access the service in your browser or via curl:
+### Test the service locally: To access the service in the browser or via curl:
 ``` curl http://localhost:3000/hello ```
 Or 
 In browser the result is as follows:
@@ -59,7 +59,7 @@ I used the commands like
 ### Run the Docker container locally:
 ``` docker run -p 3001:3000 vineelam23/world-service:latest ```
 
-### Test the service locally: To access the service in your browser or via curl:
+### Test the service locally: To access the service in the browser or via curl:
 ``` curl http://localhost:3001/world ```
 
 Also checked if the service was running locally or not.
