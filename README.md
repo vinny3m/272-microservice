@@ -14,9 +14,9 @@ I installed minikube using</br>
 **Cloned my git repo to vs code and used nodeJs and ExpressJs for creating two microservices**
 
 ## Hello-service
-Created hello-service which returns a simple Hello message.
-Here the endpoint is /hello and returns “Hello” string
-Created a dockerfile for this microservice and built the docker image.
+Created hello-service which returns a simple Hello message. </br>
+Here the endpoint is /hello and returns “Hello” string. </br>
+Created a dockerfile for this microservice and built the docker image. </br>
 I used the commands as follows:
 ### Build the Docker image:
 ``` docker build -t vineelam23/hello-service:latest . ```
@@ -29,7 +29,8 @@ Or
 In browser the result is as follows:
 ![hello-1](images/hello-1.png)
 
-### Push to Docker Hub: 
+### Pushed to Docker Hub: 
+I used following commands to push
 ``` docker login ``` 
 ``` docker push vineelam23/hello-service:latest ```
 
@@ -47,10 +48,10 @@ The output is:
 ![hello-3](images/hello-3.png)
 
 ## World-service
-Also Created a world-service which returns a simple World message.
-The endpoint here is /world and uses port as 3001 and returns “World” as a string in the browser.
-Created dockerfile and also built the docker image and pushed to docker hub. 
-Here is the link for created docker images in docker hub.
+Also Created a world-service which returns a simple World message. </br>
+The endpoint here is /world and uses port as 3001 and returns “World” as a string in the browser. </br>
+Created dockerfile and also built the docker image and pushed to docker hub. </br>
+Here is the link for created docker images in docker hub. </br>
 
 
 I used the commands like 
@@ -103,6 +104,7 @@ Here are the commands used and the test result for the combined script.
 ### Used to test the service:
 ``` minikube service combined-service ```
 
+The images below show the test results
 ![cs-1](images/cs-1.png)
 ![cs-2](images/cs-2.png)
 
